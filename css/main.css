@@ -1,0 +1,193 @@
+body{
+	background-color: #d8d4d4;
+	font-size: 16px;
+	font-family: Karla;
+	
+}
+
+main{
+	margin-left: 27%;
+	margin-right: 27%;
+	margin-top: 5%;
+	background: white;
+	box-shadow: 0 0 0.25 rgba(0, 0, 0, 0.25);
+	padding-top: 20px;
+	border-radius: 10px;
+	
+}
+
+.intro{
+	padding-left: 30px;
+	padding-right: 40px;
+}
+
+h1{
+	color: hsl(179, 62%, 43%);
+}
+
+.intro h2{
+	color: hsl(71, 73%, 54%);
+}
+
+.intro p{
+	color: hsl(218, 22%, 67%);
+	font-size: 18px;
+	padding-bottom: 10px;
+	line-height: 2;
+}
+
+.info_grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+}
+
+.subscription{
+	background-color: hsl(179, 62%, 43%);
+	padding-top: 30px;
+	padding-left: 30px;
+	border-bottom-left-radius: 10px;
+	grid-column: 1/2;
+}
+
+.reason{
+	background-color: hsl(179, 81%, 42%);
+	padding-top: 30px;
+	padding-left: 30px;
+	border-bottom-right-radius: 10px;
+	grid-column: 2/3;
+}
+
+.subscription h2{
+	color: white;
+}
+
+.reason h2{
+	color: white;
+}
+
+.subscription #amount{
+	color: white;
+	font-size: 35px;
+}
+
+
+.subscription #duration{
+	color: hsl(204, 43%, 93%);
+	
+}
+
+.subscription p{
+	color: white;
+	margin-bottom: 20px;
+	
+}
+
+.subscription button{
+	border-radius: 5px;
+	background: hsl(71, 73%, 54%);
+	color: white;
+	padding-left: 76px;
+	padding-right: 76px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 18px;
+	border: none;
+	box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
+	outline: none;
+}
+
+.reason p{
+	margin: 5px;
+	color: hsl(204, 43%, 93%);
+	
+}
+
+.reason #last_reason{
+	padding-bottom: 35px;
+}
+
+
+button:hover{
+	background-color: hsl(71, 73%, 47%);
+}
+
+@media(max-width: 375px){
+	
+	main{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	
+	}
+	
+	.intro h2{
+	font-size: 16px;
+	}
+
+	.intro p{
+	font-size: 15px;
+	padding-bottom: 10px;
+	line-height: 2;
+	}
+	
+	.info_grid{
+	
+	grid-template-columns: auto;
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas: 
+		"subscription"
+		"reason"
+		;
+	
+	}
+	
+	.subscription{
+		
+	grid-area: subscription;
+	border-bottom-left-radius: 0;
+	padding-top: 10px;
+	}
+	
+	.reason{
+		
+	grid-area: reason;
+	border-bottom-left-radius: 10px;
+	padding-top: 10px;
+	}
+	
+	.subscription button{
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+	
+	.subscription h2{
+	font-size: 17px;
+	}
+	
+	.subscription #amount{
+	color: white;
+	font-size: 20px;
+	}
+	
+	.subscription #duration{
+	font-size: 14px;
+	
+	}
+	
+	.subscription p{
+	font-size: 14px;
+	
+	}
+	
+	.reason h2{
+	font-size: 17px;
+	}
+	
+	.reason p{
+	font-size: 14px;
+	
+}
+	
+}
